@@ -21,6 +21,7 @@ function login() {
   if (selectedRole.value === "employee") {
     window.location.href = "employee/dashboard.html";
   } else if (selectedRole.value === "admin") {
-    window.location.href = "admin/dashboard.html";
+    window.location.href = "admin/admin.html";
   }
 }
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="form-container">
+                <input type="text" id="empName" placeholder="Employee Name">
+                <input type="number" id="empSalary" placeholder="Employee Salary">
+                <input type="text" id="empTeam" placeholder="Team">
+                <select id="empRole">
+                    <option value="SDE">SDE</option>
+                    <option value="QA">QA</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Designer">Designer</option>
+                </select>
+                <input type="text" id="companyName" placeholder="Company Name">
+                <button id="addBtn">Create Employee</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <table id="empTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Salary</th>
+                        <th>Role</th>
+                        <th>Team</th>
+                        <th>Company Name</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

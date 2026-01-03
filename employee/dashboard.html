@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dayflow HRMS</h1>
+    <p>Welcome, Employee</p>
+</header>
+
+<div class="dashboard">
+
+    <div class="card" onclick="openProfile()">
+        <h3>Profile</h3>
+        <p>View & edit profile</p>
+    </div>
+
+    <div class="card" onclick="openAttendance()">
+        <h3>Attendance</h3>
+        <p>Check daily attendance</p>
+    </div>
+
+    <div class="card" onclick="openLeave()">
+        <h3>Leave Requests</h3>
+        <p>Apply or track leave</p>
+    </div>
+
+    <div class="card logout" onclick="logout()">
+        <h3>Logout</h3>
+        <p>Sign out securely</p>
+    </div>
+
+</div>
+
+<div class="activity">
+    <h2>Recent Activity & Alerts</h2>
+    <ul>
+        <li>✔ Attendance marked for today</li>
+        <li>⏳ Leave request pending approval</li>
+        <li>💰 Salary slip generated</li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

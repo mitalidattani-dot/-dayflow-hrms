@@ -55,5 +55,5 @@ leave approvals, and payroll visibility through a single platform.
    
 ## Team Members
 - mitali dattani
-kavya ajagia
+- kavya ajagia
   

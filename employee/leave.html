@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Management</title>
+    <link rel="stylesheet" href="leave.css">
+</head>
+<body>
+
+<header>
+    <h1>Leave Management</h1>
+</header>
+
+<div class="container">
+
+    <!-- Apply Leave Form -->
+    <div class="form-section">
+        <h2>Apply for Leave</h2>
+
+        <label>Leave Type</label>
+        <select id="leaveType">
+            <option value="Paid Leave">Paid Leave</option>
+            <option value="Sick Leave">Sick Leave</option>
+            <option value="Unpaid Leave">Unpaid Leave</option>
+        </select>
+
+        <label>From Date</label>
+        <input type="date" id="fromDate">
+
+        <label>To Date</label>
+        <input type="date" id="toDate">
+
+        <label>Remarks</label>
+        <textarea id="remarks" placeholder="Enter reason for leave"></textarea>
+
+        <button onclick="applyLeave()">Apply Leave</button>
+    </div>
+
+    <!-- Leave Summary -->
+    <div class="summary">
+        <div>Pending: <span id="pendingCount">0</span></div>
+        <div>Approved: <span id="approvedCount">0</span></div>
+        <div>Rejected: <span id="rejectedCount">0</span></div>
+    </div>
+
+    <!-- Leave Status Table -->
+    <h2>Leave Status</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Leave Type</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Remarks</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="leaveTable"></tbody>
+    </table>
+
+</div>
+
+<script src="leave.js"></script>
+</body>
+</html>
